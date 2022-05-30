@@ -1,9 +1,17 @@
+/*Styles for body and general */
 body {
   display: flex;
   flex-direction: column;
   max-width: 900px;
   margin: 0 auto;
-  border: 1px solid;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #fbf7f0;
+}
+h2 {
+  font-family: "Fjalla One", sans-serif;
+}
+a {
+  text-decoration: none;
 }
 
 /*Styles for navigation bar*/
@@ -12,45 +20,66 @@ nav {
   flex-direction: row;
   align-items: center;
   padding: 1em;
+  background-color: #d9e4dd;
 }
 .navigation-items {
   display: flex;
   flex-direction: row;
+  gap: 1em;
   margin: 0;
   margin-left: auto;
   align-items: center;
   list-style-type: none;
 }
 
-.navigation-item {
-  margin: 1em;
+.navigation-item a:link,
+a:visited {
+  background-color: #d9e4dd;
+  color: black;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+}
+.navigation-item a:hover {
+  background-color: #cdc9c3;
+  color: black;
+  padding: 0.5em 1em;
 }
 
 /*Styles for about me*/
 .about-me-container {
   display: flex;
   flex-direction: row;
+  margin: 1em 0;
+  background-color: #d9e4dd;
 }
 .about-me-text-container {
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
   padding: 1em;
-  border: 1px solid;
 }
 .about-me-image {
   display: flex;
   flex: 1 1 auto;
   width: 300px;
+  padding: 1em;
 }
 
 /*Styles for projects*/
 .projects-container {
   display: flex;
   flex-direction: row;
+  gap: 1em;
+  flex: 1 1 100%;
 }
 .projects-text-container {
   display: flex;
   flex-direction: column;
   padding: 1em;
+  background-color: #d9e4dd;
+}
+
+/*Styles for footer*/
+footer {
+  background-color: #d9e4dd;
 }
