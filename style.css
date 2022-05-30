@@ -13,13 +13,17 @@ h2 {
 a {
   text-decoration: none;
 }
+a:link {
+  text-decoration: none;
+  color: #000;
+}
 
 /*Styles for navigation bar*/
 nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 1em;
+  padding: 0 1em;
   background-color: #d9e4dd;
 }
 .navigation-items {
@@ -39,6 +43,7 @@ a:visited {
   padding: 0.5em 1em;
   border-radius: 0.5em;
 }
+
 .navigation-item a:hover {
   background-color: #cdc9c3;
   color: black;
@@ -65,21 +70,60 @@ a:visited {
   padding: 1em;
 }
 
-/*Styles for projects*/
-.projects-container {
-  display: flex;
-  flex-direction: row;
-  gap: 1em;
-  flex: 1 1 100%;
-}
-.projects-text-container {
+/*Styles for skilss*/
+.skills-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  background-color: #d9e4dd;
+  margin-bottom: 1em;
+}
+
+.skills-container-logos {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2em;
+  justify-content: center;
+  gap: 2em;
+}
+
+.skills-container-logos .fa-brands {
+  font-size: 3em;
+}
+
+/*Styles for projects*/
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em 1em;
+  flex: 1 1 100%;
+  margin-bottom: 1em;
+}
+.projects-text-container {
   padding: 1em;
   background-color: #d9e4dd;
 }
 
 /*Styles for footer*/
 footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #d9e4dd;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  padding-bottom: 1em;
+}
+
+.footer-content-container i {
+  font-size: 2em;
+}
+
+.footer-content-container .fa-linkedin:hover {
+  color: #0a66c2;
 }
